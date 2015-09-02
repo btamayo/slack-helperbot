@@ -1,0 +1,9 @@
+node_modules
+.DS_Store*
+.hubot_history
+scripts/bi_attack.coffee
+lib/*
+scripts/util.coffee
+config.js
+.editorconfig
+TODO.md

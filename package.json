@@ -1,0 +1,50 @@
+{
+  "name": "helper-bot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "biyancuh",
+  "description": "A hopefully helpful bot",
+  "main": "site/app.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "dependencies": {
+    "express": "~4.9.7",
+    "express-handlebars": "~1.1.0",
+    "git-changelog": "^0.1.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "hubot": "^2.12.0",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-google-images": "^0.1.4",
+    "hubot-google-translate": "^0.1.0",
+    "hubot-help": "^0.1.1",
+    "hubot-heroku-keepalive": "0.0.4",
+    "hubot-maps": "0.0.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.2",
+    "hubot-rules": "^0.1.0",
+    "hubot-scripts": "^2.5.16",
+    "hubot-shipit": "^0.2.0",
+    "hubot-slack": "^3.3.0",
+    "hubot-youtube": "^0.1.2",
+    "load-grunt-tasks": "^3.1.0",
+    "lodash": "^3.9.3",
+    "loggly": "^1.0.8",
+    "memwatch-next": "^0.2.6"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "~0.14.0",
+    "uglify-js": "~2.4.15",
+    "watchify": "~2.0.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
